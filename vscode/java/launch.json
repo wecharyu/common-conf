@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    // A remote debugger
+    {
+      "type": "java",
+      "name": "hms",
+      // preferred project to search for classes
+      "projectName": "hive-standalone-metastore-server",
+      "request": "attach",
+      "hostName": "localhost",
+      "port": 5005
+    }
+  ]
+}
