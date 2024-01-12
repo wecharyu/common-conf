@@ -3,6 +3,17 @@
   "java.jdt.ls.java.home": "/usr/lib/jvm/java-17-openjdk-amd64/",
   // set vm arguments for Java Language Server
   "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx2G -Xms100m -Xlog:disable",
+  // set project jdk
+  "java.configuration.runtimes": [
+    {
+      "name": "JavaSE-1.8",
+      "path": "/usr/lib/jvm/temurin-8-jdk-amd64",
+      "sources": "/usr/lib/jvm/temurin-8-jdk-amd64/src.zip",
+      "default": true
+    }
+  ],
   // set some default options for mvn, such as profiles
-  "maven.executable.options": "-DskipTests -Pitests"
+  "maven.executable.options": "-DskipTests -Pitests",
+  "java.maven.downloadSources": true,
+  "java.autobuild.enabled": false
 }
