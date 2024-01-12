@@ -1,0 +1,9 @@
+{
+  // window settings
+  "window.zoomLevel": 2.0,
+  "window.nativeTabs": true,
+  // editor settings
+  "editor.fontSize": 14,
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000
+}
