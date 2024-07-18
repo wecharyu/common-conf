@@ -11,6 +11,10 @@
     {
       "prefix": "HIVE-",
       "url": "https://issues.apache.org/jira/browse/HIVE-<num>"
+    },
+    {
+      "prefix": "GLUTEN-",
+      "url": "https://github.com/apache/incubator-gluten/issues/<num>"
     }
   ]
 }

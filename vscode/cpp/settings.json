@@ -1,0 +1,20 @@
+{
+  "clangd.path":"/usr/local/clang/bin/clangd",
+  "clangd.arguments": [
+      "--background-index",
+      "--compile-commands-dir=build",  // relative path of compile_commands.json
+      "-j=12",
+      "--all-scopes-completion",
+      "--completion-style=detailed",
+      "--header-insertion=iwyu",
+      "--pch-storage=memory",
+      "--cross-file-rename",
+      "--enable-config",
+      "--fallback-style=WebKit",
+      "--pretty",
+      "--clang-tidy",
+      "--query-driver=clang++"
+  ],
+  // disable intellisense in C/C++ extension since it's too slow
+  "C_Cpp.intelliSenseEngine": "disabled"
+}
