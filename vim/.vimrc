@@ -11,6 +11,9 @@ syntax enable
 " Show the line number
 set number
 
+" Show current cursor position (line num, column num and percentage)
+set ruler
+
 " Highlight current line
 set cursorline
 
@@ -106,5 +109,6 @@ set expandtab " converting tabs into space characters
 set autoindent " Auto indent
 set smartindent "Smart indent
 
-" Make the copy or cut data into system cut board
-set clipboard=unnamed
+" Make yank copy to the system clipboard as well
+nnoremap y "+y
+vnoremap y "+y
