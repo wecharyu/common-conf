@@ -4,6 +4,7 @@
   "window.nativeTabs": true,
   // editor settings
   "editor.fontSize": 14,
+  "editor.renderWhitespace": "all",
   "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 1000,
   // gitlens settings
