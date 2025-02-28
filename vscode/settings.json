@@ -17,5 +17,10 @@
       "prefix": "GLUTEN-",
       "url": "https://github.com/apache/incubator-gluten/issues/<num>"
     }
-  ]
+  ],
+  // trace log for troubleshooting when connection can not be established.
+  "remote.SSH.logLevel":"trace",
+  // respect curl first since wget could encounter compatible issue,
+  // for example --no-config is not avaialble in old version.
+  "remote.SSH.useCurlAndWgetConfigurationFiles": true,
 }
