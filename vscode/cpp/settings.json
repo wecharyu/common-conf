@@ -16,5 +16,12 @@
       "--query-driver=clang++"
   ],
   // disable intellisense in C/C++ extension since it's too slow
-  "C_Cpp.intelliSenseEngine": "disabled"
+  "C_Cpp.intelliSenseEngine": "disabled",
+  // configure clang-format if the project has .clang-format
+  "C_Cpp.clang_format_style": "file",
+  "C_Cpp.clang_format_path": "/usr/bin/clang-format",
+  "[cpp]": {
+    "editor.defaultFormatter": "xaver.clang-format",
+  },
+  "editor.formatOnSave": true,
 }
