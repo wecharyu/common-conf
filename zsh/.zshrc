@@ -102,5 +102,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# avoid generating .zsh_history.new file
+unsetopt HIST_SAVE_BY_COPY
+
 # enable the environments in .bash_profile
 source ~/.bash_profile
