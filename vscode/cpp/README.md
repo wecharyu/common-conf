@@ -10,3 +10,4 @@ The useful configuration files to startup and debug c/c++ project in vscode.
   - C/C++ Extension Pack
   - clangd
   - CMake Language Support
+  - Clang-Format
